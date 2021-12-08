@@ -13,16 +13,17 @@ import {
   Switch,
   Button,
   IconButton,
-  useColorMode
+  useColorMode,
+  Spacer
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import { NextLink } from 'next/link'
+// import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+// import { NextLink } from 'next/link'
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Flex position="fixed" top="1rem" right="1rem" align="center">
+    {/* <Flex position="fixed" top="1rem" right="1rem" align="center">
       <NextLink href="/" passHref>
         <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
           Home
@@ -40,39 +41,43 @@ export const App = () => (
           Contact
         </Button>
       </NextLink>
-    </Flex>
-    <Container maxW="container.xl" p={0}>
-      <Flex h="100vh" py={20}>
-        <VStack
-        w="full"
+    </Flex> */}
+    {/* <Container maxW="container.xl" bg="pink" p={0}> */}
+      <Flex h="100vh" py={20} bg="pink">
+        <Box
+        w="50vh"
         h="full"
         p={10}
         spacing={10}
         alignItems="flex-start"
-        bg="gray.50"
+        bg="\
+        "
         >
-        </VStack>
-            <VStack
-        w="full"
+        </Box>
+        <Spacer/>
+        <Box
+        w="50vh"
         h="full"
         p={10}
         spacing={10}
         alignItems="flex-start"
-        bg="gray.50"
+        bg="blue"
         >
-        </VStack>
-        <VStack
-        w="full"
+        </Box>
+        <Spacer/>
+        <Box
+        w="50vh"
         h="full"
         p={10}
         spacing={10}
         alignItems="flex-start"
-        bg="gray.50"
+        bg="magenta"
         >
-        </VStack>
+        </Box>
       </Flex>
-    </Container>
-    <Box textAlign="center" fontSize="xl">
+    {/* </Container> */}
+    {/* Chakra default main page */}
+    <Box textAlign="center" fontSize="xl" bg="lavender">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
