@@ -50,8 +50,7 @@ export const App = () => (
         p={10}
         spacing={10}
         alignItems="flex-start"
-        bg="\
-        "
+        bg="purple"
         >
         </Box>
         <Spacer/>
