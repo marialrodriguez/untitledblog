@@ -14,7 +14,8 @@ import {
   Button,
   IconButton,
   useColorMode,
-  Spacer
+  Spacer,
+  GridItem
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
@@ -23,6 +24,7 @@ import { Logo } from "./Logo"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+    {/* Some old navbar template */}
     {/* <Flex position="fixed" top="1rem" right="1rem" align="center">
       <NextLink href="/" passHref>
         <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
@@ -43,6 +45,28 @@ export const App = () => (
       </NextLink>
     </Flex> */}
     {/* <Container maxW="container.xl" bg="pink" p={0}> */}
+    {/* Navbar */}
+    {/* end some old navbar template */}
+    <Grid templateColumns='repeat(3, 1fr)' 
+    gap={6}
+    h="5"
+    >
+      <GridItem>
+        test 
+      </GridItem>
+      <GridItem>
+        test 2
+      </GridItem>
+      <Box w='100%' h='10' bg='blue.500' />
+    </Grid>
+    {/* End Navbar */}
+    {/* <Grid templateColumns='repeat(5, 1fr)' gap={6}>
+      <Box w='100%' h='10' bg='blue.500' />
+      <Box w='100%' h='10' bg='blue.500' />
+      <Box w='100%' h='10' bg='blue.500' />
+      <Box w='100%' h='10' bg='blue.500' />
+      <Box w='100%' h='10' bg='blue.500' />
+    </Grid> */}
       <Flex h="100vh" py={20} bg="pink">
         <Box
         w="50vh"
