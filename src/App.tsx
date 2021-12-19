@@ -24,42 +24,30 @@ import { Logo } from "./Logo"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    {/* Some old navbar template */}
-    {/* <Flex position="fixed" top="1rem" right="1rem" align="center">
-      <NextLink href="/" passHref>
-        <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
-          Home
-        </Button>
-      </NextLink>
-
-      <NextLink href="/about" passHref>
-        <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-          About
-        </Button>
-      </NextLink>
-
-      <NextLink href="/contact" passHref>
-        <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-          Contact
-        </Button>
-      </NextLink>
-    </Flex> */}
-    {/* <Container maxW="container.xl" bg="pink" p={0}> */}
-    {/* Navbar */}
-    {/* end some old navbar template */}
-    <Grid templateColumns='repeat(3, 1fr)' 
-    gap={6}
-    h="5"
-    >
-      <GridItem>
-        test 
+    {/* start social bar */}
+    <Grid templateColumns='repeat(1, 1fr)' gap={1} h="10">
+      <GridItem bg='#f4fafa'>
+        beginning 
       </GridItem>
-      <GridItem>
-        test 2
-      </GridItem>
-      <Box w='100%' h='10' bg='blue.500' />
     </Grid>
-    {/* End Navbar */}
+    {/* end social bar */}
+    {/* start navbar */}
+    <Grid templateColumns='repeat(3, 1fr)' gap={1} h="20">
+      <GridItem bg='#e7e7d7'>
+        beginning 
+      </GridItem>
+      <GridItem bg='#e6c1c1'>
+        middle 
+        <Button variantColor="green" variant="ghost">Button</Button>
+        <Button variantColor="green" variant="ghost">Button</Button>
+        <Button variantColor="green" variant="ghost">Button</Button>
+      </GridItem>
+      <GridItem bg='#f8b5ae'>
+        end
+        <Button variant="solid">Button</Button>
+      </GridItem>
+    </Grid>
+    {/* end navbar */}
     {/* <Grid templateColumns='repeat(5, 1fr)' gap={6}>
       <Box w='100%' h='10' bg='blue.500' />
       <Box w='100%' h='10' bg='blue.500' />
@@ -67,40 +55,41 @@ export const App = () => (
       <Box w='100%' h='10' bg='blue.500' />
       <Box w='100%' h='10' bg='blue.500' />
     </Grid> */}
-      <Flex h="100vh" py={20} bg="pink">
+    {/* start display boxes */}
+      <Flex h="100vh" py={20} bg="f4fafa">
         <Box
-        w="50vh"
+        w="60vh"
         h="full"
-        p={10}
+        p={50}
         spacing={10}
         alignItems="flex-start"
-        bg="purple"
+        bg="#e7e7d7"
         >
         </Box>
         <Spacer/>
         <Box
-        w="50vh"
+        w="60vh"
         h="full"
         p={10}
         spacing={10}
         alignItems="flex-start"
-        bg="blue"
+        bg="#e7e7d7"
         >
         </Box>
         <Spacer/>
         <Box
-        w="50vh"
+        w="60vh"
         h="full"
         p={10}
         spacing={10}
         alignItems="flex-start"
-        bg="magenta"
+        bg="#e7e7d7"
         >
         </Box>
       </Flex>
-    {/* </Container> */}
+    {/* end display boxes */}
     {/* Chakra default main page */}
-    <Box textAlign="center" fontSize="xl" bg="lavender">
+    <Box textAlign="center" fontSize="xl" bg="#e6c1c1">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
