@@ -38,13 +38,22 @@ export const App = () => (
       </GridItem>
       <GridItem bg='#e6c1c1'>
         middle 
-        <Button variantColor="green" variant="ghost">Button</Button>
-        <Button variantColor="green" variant="ghost">Button</Button>
-        <Button variantColor="green" variant="ghost">Button</Button>
+        <Button className='link-button' variantColor="green" variant="ghost">Button</Button>
+        <Button className='link-button' variantColor="green" variant="ghost">Button</Button>
+        <Button className='link-button' variantColor="green" variant="ghost">Button</Button>
       </GridItem>
       <GridItem bg='#f8b5ae'>
         end
-        <Button variant="solid">Button</Button>
+        <Button
+          className='feature-button' 
+          size='md'
+          height='48px'
+          width='200px'
+          borderRadius='0px'
+          color='white'
+          backgroundColor='black'>
+          Button
+        </Button>
       </GridItem>
     </Grid>
     {/* end navbar */}
