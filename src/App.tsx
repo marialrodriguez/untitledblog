@@ -26,6 +26,7 @@ import { SiTiktok } from 'react-icons/si'
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { type } from "os"
+import BackgroundVideo from "./BackgroundVideo"
 // import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 // import { NextLink } from 'next/link'
 
@@ -62,6 +63,9 @@ export const App = () => (
     </Grid>
     {/* end navbar */}
     {/* start video block */}
+    <Grid>
+      <BackgroundVideo/>
+    </Grid>
     {/* end video block */}
     {/* start display boxes */}
       <Flex h="100vh" py={20} bg="#FBEDF9">
