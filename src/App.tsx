@@ -63,36 +63,12 @@ export const App = () => (
     </Grid>
     {/* end navbar */}
     {/* start video block */}
-    <Grid>
+    {/* <Grid>
       <BackgroundVideo/>
-    </Grid>
+    </Grid> */}
     {/* end video block */}
-    {/* start display boxes */}
-      <Flex h="100vh" py={20} bg="#FBEDF9">
-        <Box w="60vh" h="full" p={50} spacing={10} alignItems="flex-start" bg="">
-          <Image src='https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'/>
-          <Button className='feature-button' size='md' height='48px' width='200px'borderRadius='0px' color='white'backgroundColor='black'>
-            page
-          </Button>
-        </Box>
-        <Spacer/>
-        <Box w="60vh" h="full" p={10} spacing={10} alignItems="flex-start"bg="">
-          <Image src='https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'/>
-          <Button className='feature-button' size='md' height='48px' width='200px'borderRadius='0px' color='white'backgroundColor='black'>
-            page
-          </Button>
-        </Box>
-        <Spacer/>
-        <Box w="60vh" h="full" p={10} spacing={10} alignItems="flex-start" bg="">
-          <Image src='https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'/>
-          <Button className='feature-button' size='md' height='48px' width='200px'borderRadius='0px' color='white'backgroundColor='black'>
-            page
-          </Button>
-        </Box>
-      </Flex>
-    {/* end display boxes */}
-    {/* Chakra default main page */}
-    <Box textAlign="center" fontSize="xl" bg="#424245">
+     {/* Chakra default main page */}
+     <Box textAlign="center" fontSize="xl" bg="#424245">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
@@ -112,5 +88,30 @@ export const App = () => (
           </VStack>
         </Grid>
       </Box>
+    {/* start display boxes */}
+      <Flex h="100vh" py={20} bg="#FBEDF9">
+        <Box w="60vh" h="full" p={50} spacing={10} alignItems="flex-start" bg="">
+          <Image src='https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'/>
+          <Button className='feature-button' size='md' height='48px' width='200px'borderRadius='0px' color='white'backgroundColor='black' m={6}>
+            page
+          </Button>
+        </Box>
+        <Spacer/>
+        <Box w="60vh" h="full" p={10} spacing={10} alignItems="flex-start"bg="">
+          <Image src='https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'/>
+          <Button className='feature-button' size='md' height='48px' width='200px'borderRadius='0px' color='white'backgroundColor='black' m={6}>
+            page
+          </Button>
+        </Box>
+        <Spacer/>
+        <Box w="60vh" h="full" p={10} spacing={10} alignItems="flex-start" bg="">
+          <Image src='https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'/>
+          <Button className='feature-button' size='md' height='48px' width='200px'borderRadius='0px' color='white'backgroundColor='black' m={6}>
+            page
+          </Button>
+        </Box>
+      </Flex>
+    {/* end display boxes */}
+   
   </ChakraProvider>
 )
