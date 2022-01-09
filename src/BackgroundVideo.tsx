@@ -1,14 +1,11 @@
 import React from "react";
 
 const BackgroundVideo = () => {
-    const videoSource = "../src/sunflowerfield.mp4"
+    const videoSource = "./sunflowerfield.mp4"
     return (
         <div>
-        <div>
-            test
-        </div>
             <video autoPlay loop muted>
-                <source src={require("./sunflowerfield.mp4")} type="video/mp4"/>
+                <source src={videoSource} type="video/mp4"/>
             </video>
         </div>
     )
